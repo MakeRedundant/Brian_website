@@ -86,6 +86,16 @@ section:target h1 {
     background: var(--light-color);
 }
 
+#fifth {
+    background: var(--light-color);
+}
+
+#sixth {
+    background: var(--light-color);
+}
+
+
+
 @keyframes fadeIn {
     100% { opacity:1 }
 }
