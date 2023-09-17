@@ -251,30 +251,30 @@ a {
 
 @media screen and (max-width: 600px) {
   .icon {
-    font-size: 10vw;
+    font-size: 10vw !important;
   }
 }
 
 @media screen and (min-width: 601px) and (max-width: 768px) {
   .icon {
-    font-size: 8vw;
+    font-size: 8vw !important;
   }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .icon {
-    font-size: 6vw;
+    font-size: 6vw !important;
   }
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
   .icon {
-    font-size: 4vw;
+    font-size: 4vw !important;
   }
 }
 
 @media screen and (min-width: 1201px) {
   .icon {
-    font-size: 3vw;
+    font-size: 3vw !important;
   }
 }
