@@ -1,5 +1,6 @@
-// "Coding is ..." effect
-let message = "CODING is pretty fun as well 💻";
+
+// "Programming is ..." effect
+let message = "Programming is pretty fun as well 💻";
 let messageIndex = 0;
 let interval = setInterval(function () {
   document.getElementById("Codingtext").innerHTML += message.charAt(messageIndex);

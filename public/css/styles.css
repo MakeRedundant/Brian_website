@@ -5,11 +5,11 @@
 }
 
 :root {
---primary-color: #D96AA7;
---secondary-color: #422C73;
---complimentary-color: #88BFB5;
---contrast-color: #F2E527;
---light-color: #D2A9D9;
+--primary-color: #161461;
+--secondary-color: #4415a8;
+--complimentary-color: #0e1797;
+--contrast-color: #023d26;
+--light-color: #059682;
 }
 
 html, body {
@@ -51,10 +51,9 @@ nav {
   transition: opacity 0.5s ease-in-out;
 }
 
-
-
 section {
     position: absolute;
+    color: azure;
     top: 0;
     height: 100vh;
     width: 0;

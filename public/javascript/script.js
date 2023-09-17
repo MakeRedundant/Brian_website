@@ -1,3 +1,5 @@
+
+// This code will make the zero-section go from opactiy 0 -1 
 // Make the .zero-section element visible by default.
 var zeroSection = document.querySelector('.zero-section');
 zeroSection.style.opacity = 1;
