@@ -21,6 +21,7 @@ section {
 
 .page {
   position: absolute;
+  height: 100vh;
 }
 
 #p1 {
