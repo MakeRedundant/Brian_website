@@ -1,81 +1,94 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <meta name="author" content="Brian Trang">
-    <title>Brian Trang</title>
-    <!-- <link rel="stylesheet" href="reset.css"> -->
-    <link rel="stylesheet" href="public/css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css"> <!--For the flags and countries-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!--For the icons-->
+  <title>Brian Trang</title>
+  <!-- <link rel="stylesheet" href="reset.css"> -->
+  <link rel="stylesheet" href="public/css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
+  <!--For the flags and countries-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <!--For the icons-->
 </head>
 
 <body>
+  <nav>
+    <a href="#first"><i class="far fa-user"></i></a>
+    <a href="#second"><i class="fas fa-briefcase"></i></a>
+    <a href="#third"><i class="far fa-file"></i></a>
+    <a href="#fourth"><i class="far fa-address-card"></i></a>
+  </nav>
 
-  <div class="ct" id="t1">
-    <div class="ct" id="t2">
-      <div class="ct" id="t3">
-        <div class="ct" id="t4">
-          <div class="ct" id="t5">
-            <div class="ct" id="t6">
-              <section>
-                <ul>
-                  <a href="#t1">
-                    <li class="icon fa fa-home" id="I"></li>
-                  </a>
-                  <a href="#t2">
-                    <li class="icon fa fa-briefcase" id="II"></li>
-                  </a>
-                  <a href="#t3">
-                    <li class="icon fa fa-code" id="III"></li>
-                  </a>
-                  <a href="#t4">
-                    <li class="icon fa fa-folder-open" id="IV"></li>
-                  </a>
-                  <a href="#t5">
-                    <li class="icon fa fa-school" id="V"></li>
-                  </a>
-                  <a href="#t6">
-                    <li class="icon fa fa-phone" id="VI"></li>
-                  </a>
-                </ul>
-                <div class="page" id="p1">
-                  <li class="icon fa fa-home"><span class="title">Home</span><span class="hint">Like this to see the
-                      magic!...<br /> but I'll be really happy If you do so.</span></li>
-                </div>
-                <div class="page" id="p2">
-                  <li class="icon fa fa-briefcase"><span class="title">Experience</span></li>
-                </div>
-                <div class="page" id="p3">
-                  <li class="icon fa fa-code"><span class="title">Skills</span></li>
-                </div>
-                <div class="page" id="p4">
-                  <li class="icon fa fa-folder-open"><span class="title">Project</span><span class="hint"><a
-                        href="https://dribbble.com/rupok" target="_blank">Follow me on Dribbble</span></li>
-                </div>
-                <div class="page" id="p5">
-                  <li class="icon fa fa-school"><span class="title">Education</span></li>
-                </div>
-                <div class="page" id="p6">
-                  <li class="icon fa fa-phone"><span class="title">Contact</span></li>
-                </div>
-                <p class="credit"> Website by <a href="">Brian Trang</a></p>
-              </section>
+  <div class="first-section">
+    <h1>About</h1> <br>
+    <h2 id="hello" onclick="changeLanguage()">Hello</h2> <!--Hello in different langauges-->
+    <p>My name is Brian, and I'm a software engineer</p>
+    <p>I like to eat good food 👔 and wear good clothes 🍔</p>
+    <br>
+    <div id="Codingtext"></div>
 
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <p> After more than 5 years as a optometrist.<br>
+      I have decided to jump over to programming! <br>
+      When i'm not coding you can find me <br>
+      watching youtube coding tutorials or cat videos.
+    </p>
+
+    <p>Look around and I hope to hear back from you!</p>
   </div>
+  <div class='container'>
+    <section id=''>
+      <h1>Experience</h1>
+    </section>
 
 
+    <section id='first'>
+      <h1>About</h1> <br>
+      <h2 id="hello" onclick="changeLanguage()">Hello</h2> <!--Hello in different langauges-->
+      <p>My name is Brian, and I'm a software engineer</p>
+      <p>I like to eat good food 👔 and wear good clothes 🍔</p>
+      <br>
+      <div id="Codingtext"></div>
+
+      <p> After more than 5 years as a optometrist.<br>
+        I have decided to jump over to programming! <br>
+        When i'm not coding you can find me <br>
+        watching youtube coding tutorials or cat videos.
+      </p>
+
+      <p>Look around and I hope to hear back from you!</p>
+    </section>
+
+    <section id='second'>
+      <h1>Experience</h1>
+    </section>
+
+    <section id='third'>
+      <h1>Skills</h1>
+    </section>
+
+    <section id='fourth'>
+      <h1>Project</h1>
+    </section>
+
+    <section id='fourth'>
+      <h1>Education</h1>
+    </section>
+
+    <section id='fourth'>
+      <h1>Contact</h1>
+    </section>
+
+
+
+  </div>
 
 </body>
 
 <!-- <script src="script.js"></script> -->
-<!-- <script src="public/javascript/flags.js"></script>
+<script src="public/javascript/flags.js"></script>
 <script src="public/javascript/codingEffect.js"></script>
-<script src="public/javascript/darkMode.js"></script> -->
+<!-- <script src="public/javascript/darkMode.js"></script> -->
 
 </footer>
