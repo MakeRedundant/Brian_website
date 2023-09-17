@@ -5,40 +5,43 @@
 }
 
 :root {
---primary-color: #161461;
---secondary-color: #4415a8;
---complimentary-color: #0e1797;
---contrast-color: #023d26;
---light-color: #059682;
+  --primary-color: #161461;
+  --secondary-color: #4415a8;
+  --complimentary-color: #0e1797;
+  --contrast-color: #023d26;
+  --light-color: #059682;
 }
 
-html, body {
+html,
+body {
   overflow: hidden;
 }
 
 .container {
-  background: #000000; /* black */
+  background: #000000;
+  /* black */
   min-height: 100vh;
   font-family: Montserrat, sans-serif;
 }
 
 nav a {
-    font-size: 40px;
-    color: #fff;
-    text-decoration: none;
-    padding: 20px;
-    text-align: center;
+  font-size: 40px;
+  color: #fff;
+  text-decoration: none;
+  padding: 20px;
+  text-align: center;
 }
 
 nav {
-    position: absolute; /*check relative */
-    left: 0;
-    z-index: 50;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    height: 100vh;
-    background: var(--secondary-color);
+  position: absolute;
+  /*check relative */
+  left: 0;
+  z-index: 50;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  height: 100vh;
+  background: var(--secondary-color);
 }
 
 .zero-section {
@@ -47,72 +50,88 @@ nav {
   margin-left: 20%;
   margin-top: 10%;
   font-size: 20px;
-  color:azure;
+  color: azure;
   transition: opacity 0.5s ease-in-out;
 }
 
-section {
-    position: absolute;
-    color: azure;
-    top: 0;
-    height: 100vh;
-    width: 0;
-    opacity: 0;
-    transition: all ease-in .5s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} 
 
 section h1 {
+  color: #fff;
+  font-size: 50px;
+  text-transform: uppercase;
+  opacity: 0;
+  position: absolute;
+  top: 10%;
+  /* Adjust this value to fine-tune the vertical position */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+section {
+  position: absolute;
+  color: azure;
+  top: 0;
+  height: 100vh;
+  width: 0;
+  opacity: 0;
+  transition: all ease-in .5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* section h1 {
     color: #fff;
     font-size: 50px;
     text-transform: uppercase;
     opacity: 0;
-}
+} */
 
 /* Styles applied on trigger */
 section:target {
-    opacity: 1;
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 10;
+  opacity: 1;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
 }
 
 
 
 section:target h1 {
-    opacity: 0;
-    animation: 2s fadeIn forwards .5s;
+  opacity: 0;
+  animation: 2s fadeIn forwards .5s;
 }
 
 #first {
-  background:var(--primary-color);
+  background: var(--primary-color);
 }
+
 #second {
-    background: var(--complimentary-color);
+  background: var(--complimentary-color);
 }
 
 #third {
-    background: var(--contrast-color);
+  background: var(--contrast-color);
 }
 
 #fourth {
-    background: var(--light-color);
+  background: var(--light-color);
 }
 
 #fifth {
-    background: var(--light-color);
+  background: var(--light-color);
 }
 
 #sixth {
-    background: var(--light-color);
+  background: var(--light-color);
 }
 
 
 
 @keyframes fadeIn {
-    100% { opacity:1 }
+  100% {
+    opacity: 1
+  }
 }
