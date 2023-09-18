@@ -17,9 +17,9 @@ body {
   overflow: hidden;
 }
 
+
 .container {
   background: #000000;
-  /* black */
   min-height: 100vh;
   font-family: Montserrat, sans-serif;
 }
@@ -34,7 +34,6 @@ nav a {
 
 nav {
   position: absolute;
-  /*check relative */
   left: 0;
   z-index: 50;
   display: flex;
@@ -48,7 +47,7 @@ nav {
   position: absolute;
   opacity: 1;
   margin-left: 20%;
-  margin-top: 10%;
+  padding-top: 20%;
   font-size: 20px;
   color: azure;
   transition: opacity 0.5s ease-in-out;
@@ -66,7 +65,6 @@ section h1 {
   opacity: 0;
   position: absolute;
   top: 10%;
-  /* Adjust this value to fine-tune the vertical position */
   left: 50%;
   transform: translateX(-50%);
 }
@@ -130,8 +128,6 @@ section:target h1 {
   background: var(--light-color);
 }
 
-
-
 @keyframes fadeIn {
   100% {
     opacity: 1
@@ -141,23 +137,33 @@ section:target h1 {
 /* Education section */
 .university {
   display: flex;
-  margin-bottom: 20px; /* Add some spacing between universities */
-    align-items: center; /* Vertically center content */
-  justify-content: space-between; /* Spread items horizontally */
-  flex-direction: row-reverse; /* Reverse the order of flex items */
+  margin-bottom: 20px;
+  /* Add some spacing between universities */
+  align-items: center;
+  /* Vertically center content */
+  justify-content: space-between;
+  /* Spread items horizontally */
+  flex-direction: row-reverse;
+  /* Reverse the order of flex items */
 }
 
 .university img {
-  width: 150px; /* Set the width of the image (adjust as needed) */
-  margin-left: 20px; /* Add some spacing between the image and text */
+  width: 150px;
+  /* Set the width of the image (adjust as needed) */
+  margin-left: 20px;
+  /* Add some spacing between the image and text */
 }
 
 /* Additional styling for the university names (adjust as needed) */
 .university p {
-  font-size: 20px; /* Adjust the font size as needed */
-  color: #ffffff; /* Adjust the text color as needed */
-  flex: 1; /* Allow text to expand and fill available space */
-  text-align: left; /* Align text to the left to ensure consistent alignment */
+  font-size: 20px;
+  /* Adjust the font size as needed */
+  color: #ffffff;
+  /* Adjust the text color as needed */
+  flex: 1;
+  /* Allow text to expand and fill available space */
+  text-align: left;
+  /* Align text to the left to ensure consistent alignment */
   font-size: 20px;
 }
 
@@ -171,57 +177,76 @@ section:target h1 {
 
 .Projects-Container {
   display: flex;
-  flex-direction: column; /* Create a column layout */
-  align-items: center; /* Center-align the content horizontally */
+  flex-direction: column;
+  /* Create a column layout */
+  align-items: center;
+  /* Center-align the content horizontally */
 }
 
 .Main-Project {
-  margin-bottom: 5%; /* Adjust this value as needed to move it up */
-  display: flex; /* Use flexbox for the GIF container */
-  justify-content: center; /* Align items horizontally with some space */
-  align-items: center; /* Vertically center the items */
+  padding-top: 5%;
+  /* Adjust this value as needed to move it up */
+  display: flex;
+  /* Use flexbox for the GIF container */
+  justify-content: center;
+  /* Align items horizontally with some space */
+  align-items: center;
+  /* Vertically center the items */
   flex-wrap: wrap;
   clear: both;
-  flex-direction: column; /* Stack elements vertically */
+  flex-direction: column;
+  /* Stack elements vertically */
 }
 
-.Main-Project > div {
+.Main-Project>div {
   text-align: center;
 }
 
 .Sickie {
-  max-width: 450px; /* Set the maximum width to fit its container */
-  height: auto; /* Automatically adjust the height to maintain aspect ratio */
+  max-width: 450px;
+  /* Set the maximum width to fit its container */
+  height: auto;
+  /* Automatically adjust the height to maintain aspect ratio */
   margin-right: 5%;
   margin-left: 5%;
-  transition: transform 0.3s; /* Add a transition for smooth scaling */
+  transition: transform 0.3s;
+  /* Add a transition for smooth scaling */
 }
 
 /* Add the hover effect */
 .Sickie:hover {
-  transform: scale(1.3); /* Scale the image to 110% on hover */
+  transform: scale(1.3);
+  /* Scale the image to 110% on hover */
 }
 
 .Sickie-container {
   margin-left: 5%;
   display: flex;
-  flex-direction: column; /* Stack text on top of the image for small screens */
+  flex-direction: column;
+  /* Stack text on top of the image for small screens */
   align-items: center;
-  max-width: 60%; /* Set a max-width for text container */
+  max-width: 60%;
+  /* Set a max-width for text container */
   font-size: 20px;
- 
+
 }
 
 .Sickie-gif {
-  align-items: center; /* Vertically center the GIF */
+  align-items: center;
+  /* Vertically center the GIF */
 }
 
 .Side-Projects {
-  max-width: 100%; /* Optionally, set a maximum width */
-  display: grid; /* Use CSS Grid */
-  grid-template-columns: repeat(3, 1fr); /* Create three equal-width columns */
-  gap: 20px; /* Add some spacing between columns and rows */
-   flex-wrap: wrap;
+  padding-top: 10%;
+  max-width: 100%;
+  /* Optionally, set a maximum width */
+  display: grid;
+  /* Use CSS Grid */
+  grid-template-columns: repeat(3, 1fr);
+  /* Create three equal-width columns */
+  gap: 20px;
+  /* Add some spacing between columns and rows */
+  flex-wrap: wrap;
   margin-left: 120px;
 }
 
@@ -231,7 +256,8 @@ section:target h1 {
   /* For example, you can set max-width and add margin for spacing */
   max-width: 300px;
   margin: 10px;
-  height: 400px; /* Set a fixed height for the cards */
+  height: 400px;
+  /* Set a fixed height for the cards */
 }
 
 .Marvel {
