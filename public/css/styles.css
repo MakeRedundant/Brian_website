@@ -97,8 +97,6 @@ section:target {
   z-index: 10;
 }
 
-
-
 section:target h1 {
   opacity: 0;
   animation: 2s fadeIn forwards .5s;
@@ -134,4 +132,28 @@ section:target h1 {
   100% {
     opacity: 1
   }
+}
+
+/* Education section */
+.university {
+  display: flex;
+  margin-bottom: 20px; /* Add some spacing between universities */
+    align-items: center; /* Vertically center content */
+  justify-content: space-between; /* Spread items horizontally */
+  flex-direction: row-reverse; /* Reverse the order of flex items */
+}
+
+.university img {
+  width: 150px; /* Set the width of the image (adjust as needed) */
+  margin-left: 20px; /* Add some spacing between the image and text */
+}
+
+/* Additional styling for the university names (adjust as needed) */
+.university p {
+  font-size: 20px; /* Adjust the font size as needed */
+  color: #333; /* Adjust the text color as needed */
+  font-weight: bold; /* Optionally make the text bold */
+    flex: 1; /* Allow text to expand and fill available space */
+  text-align: left; /* Align text to the left to ensure consistent alignment */
+  /* margin-left: 10%; */
 }
