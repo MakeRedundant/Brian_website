@@ -151,9 +151,12 @@ section:target h1 {
 /* Additional styling for the university names (adjust as needed) */
 .university p {
   font-size: 20px; /* Adjust the font size as needed */
-  color: #333; /* Adjust the text color as needed */
-  font-weight: bold; /* Optionally make the text bold */
-    flex: 1; /* Allow text to expand and fill available space */
+  color: #ffffff; /* Adjust the text color as needed */
+  flex: 1; /* Allow text to expand and fill available space */
   text-align: left; /* Align text to the left to ensure consistent alignment */
-  /* margin-left: 10%; */
+}
+
+.university p span {
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
 }
