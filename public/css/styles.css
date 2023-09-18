@@ -54,6 +54,10 @@ nav {
   transition: opacity 0.5s ease-in-out;
 }
 
+.Projects-header h1 {
+  left: 25%;
+}
+
 
 section h1 {
   color: #fff;
@@ -162,6 +166,15 @@ section:target h1 {
   font-family: 'Times New Roman', Times, serif;
 }
 
+
+/*Projects stuff */
+
+.Projects-Container {
+  display: flex;
+  flex-direction: column; /* Create a column layout */
+  align-items: center; /* Center-align the content horizontally */
+}
+
 .Main-Project {
   margin-bottom: 5%; /* Adjust this value as needed to move it up */
   display: flex; /* Use flexbox for the GIF container */
@@ -196,6 +209,7 @@ section:target h1 {
   align-items: center;
   max-width: 60%; /* Set a max-width for text container */
   font-size: 20px;
+ 
 }
 
 .Sickie-gif {
@@ -203,11 +217,22 @@ section:target h1 {
 }
 
 .Side-Projects {
-  display: flex; /* Use flexbox for the GIF container */
-  justify-content: center; /* Center align the cards horizontally */
-  flex-wrap: wrap;
+  max-width: 100%; /* Optionally, set a maximum width */
+  display: grid; /* Use CSS Grid */
+  grid-template-columns: repeat(3, 1fr); /* Create three equal-width columns */
+  gap: 20px; /* Add some spacing between columns and rows */
+   flex-wrap: wrap;
+  margin-left: 120px;
 }
 
+/* Additional styling for your .card elements, if needed */
+.Side-Projects .card {
+  /* Your card styles here */
+  /* For example, you can set max-width and add margin for spacing */
+  max-width: 300px;
+  margin: 10px;
+  height: 400px; /* Set a fixed height for the cards */
+}
 
 .Marvel {
   width: 250px;
@@ -217,4 +242,14 @@ section:target h1 {
 .Summon {
   width: 250px;
   height: auto;
+}
+
+.Blog {
+  width: 250px;
+  height: auto;
+}
+
+.card figcaption {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
 }
