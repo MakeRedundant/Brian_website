@@ -168,6 +168,8 @@ section:target h1 {
   justify-content: center; /* Align items horizontally with some space */
   align-items: center; /* Vertically center the items */
   flex-wrap: wrap;
+  clear: both;
+  flex-direction: column; /* Stack elements vertically */
 }
 
 .Main-Project > div {
@@ -196,7 +198,18 @@ section:target h1 {
   font-size: 20px;
 }
 
-
 .Sickie-gif {
   align-items: center; /* Vertically center the GIF */
+}
+
+.Side-Projects {
+  display: flex; /* Use flexbox for the GIF container */
+  justify-content: center; /* Center align the cards horizontally */
+  flex-wrap: wrap;
+}
+
+
+.Marvel {
+  width: 150px;
+  height: auto;
 }
