@@ -145,6 +145,8 @@ section:target h1 {
   /* Spread items horizontally */
   flex-direction: row-reverse;
   /* Reverse the order of flex items */
+  /* padding-left: 20%; */
+
 }
 
 .university img {
