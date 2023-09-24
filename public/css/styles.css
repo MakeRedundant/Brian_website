@@ -12,24 +12,24 @@
   --light-color: #059682;
 }
 
-html,
+/* html,
 body {
   overflow: hidden;
-}
+} */
 
 
 .container {
   background: #000000;
   min-height: 100vh;
   font-family: Montserrat, sans-serif;
-  padding: 2%; /* Converted to a relative unit */
+  padding: 2%;
 }
 
 nav a {
-  font-size: 2.5rem; /* Converted to a relative unit */
+  font-size: 2.5rem;
   color: #fff;
   text-decoration: none;
-  padding: 1.5rem; /* Converted to a relative unit */
+  padding: 1.5rem;
   text-align: center;
 }
 
@@ -48,9 +48,9 @@ nav {
 .zero-section {
   position: absolute;
   opacity: 1;
-  padding-left: 10%; /* Converted to a relative unit */
-  padding-top: 10%; /* Converted to a relative unit */
-  font-size: 1.5rem; /* Converted to a relative unit */
+  padding-left: 10%;
+  padding-top: 10%;
+  font-size: 1.5rem;
   color: azure;
   transition: opacity 0.5s ease-in-out;
 }
@@ -62,7 +62,7 @@ nav {
 
 section h1 {
   color: #fff;
-  font-size: 2.5rem; /* Converted to a relative unit */
+  font-size: 2.5rem;
   text-transform: uppercase;
   opacity: 0;
   position: absolute;
@@ -139,19 +139,19 @@ section:target h1 {
 /* Education section */
 .university {
   display: flex;
-  margin-bottom: 1rem; /* Adjust as needed */
+  margin-bottom: 1rem;
   align-items: center;
   justify-content: space-between;
   flex-direction: row-reverse;
 }
 
 .university img {
-  width: 9rem; /* Adjust as needed */
-  margin-left: 1rem; /* Adjust as needed */
+  width: 9rem;
+  margin-left: 1rem;
 }
 
 .university p {
-  font-size: 1.25rem; /* Adjust as needed */
+  font-size: 1.25rem;
   color: #ffffff;
   flex: 1;
   text-align: left;
@@ -170,7 +170,7 @@ section:target h1 {
 }
 
 .Main-Project {
-  padding-top: 2%; /* Adjust as needed */
+  padding-top: 2%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -184,10 +184,10 @@ section:target h1 {
 }
 
 .Sickie {
-  max-width: 28rem; /* Adjust as needed */
+  max-width: 28rem;
   height: auto;
-  margin-right: 1.5%; /* Adjust as needed */
-  margin-left: 1.5%; /* Adjust as needed */
+  margin-right: 1.5%;
+  margin-left: 1.5%;
   transition: transform 0.3s;
 }
 
@@ -201,7 +201,7 @@ section:target h1 {
   flex-direction: column;
   align-items: center;
   max-width: 60%;
-  font-size: 1.25rem; /* Adjust as needed */
+  font-size: 1.25rem;
 }
 
 .Sickie-gif {
@@ -209,33 +209,33 @@ section:target h1 {
 }
 
 .Side-Projects {
-  padding-top: 5%; /* Adjust as needed */
+  padding-top: 5%;
   max-width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem; /* Adjust as needed */
+  gap: 2rem;
   flex-wrap: wrap;
-  margin-left: 10%; /* Adjust as needed */
+  margin-left: 10%;
 }
 
 .Side-Projects .card {
-  max-width: 15rem; /* Adjust as needed */
-  margin: 1rem; /* Adjust as needed */
+  max-width: 15rem;
+  margin: 1rem;
   height: auto;
 }
 
 .Marvel {
-  width: 15rem; /* Adjust as needed */
+  width: 15rem;
   height: auto;
 }
 
 .Summon {
-  width: 15rem; /* Adjust as needed */
+  width: 15rem;
   height: auto;
 }
 
 .Blog {
-  width: 15rem; /* Adjust as needed */
+  width: 15rem;
   height: auto;
 }
 
@@ -244,14 +244,43 @@ section:target h1 {
   font-weight: bold;
 }
 
-@media only screen and (min-width: 768px) {
-    /* tablets and desktop */
+
+
+/* Media query for Nav bar smaller screens */
+@media screen and (max-width: 650px) {
+  /* Smaller font size and padding for nav links on smaller screens */
+  nav a {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+    padding: 0.5rem; /* Adjust padding for smaller screens */
+  }
 }
 
-@media only screen and (max-width: 767px) {
-    /* phones */
+
+/* Add a media query for screens narrower than a specific width */
+@media screen and (max-width: 768px) {
+  /* Hide the GIFs by setting their display property to none */
+  .Sickie,
+  .Marvel,
+  .Summon,
+  .Blog {
+    display: none;
+  }
 }
 
-@media only screen and (max-width: 767px) and (orientation: portrait) {
-    /* portrait phones */
+
+
+
+
+
+/* Media query for smaller screens */
+@media screen and (max-width: 650px) {
+  .university p {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+  }
+
+  .Sickie-container {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+  }
 }
+
+
