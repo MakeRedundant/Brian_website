@@ -9,7 +9,8 @@
   --secondary-color: #4415a8;
   --complimentary-color: #0e1797;
   --contrast-color: #023d26;
-  --light-color: #059682;
+  --light-color: #003c80;
+  --sunset-color:#4b0f00;
 }
 
 html,
@@ -116,11 +117,11 @@ section:target h1 {
 }
 
 #fifth {
-  background: var(--light-color);
+  background: var(--secondary-color);
 }
 
 #sixth {
-  background: var(--light-color);
+  background: var(--sunset-color);
 }
 
 @keyframes fadeIn {
@@ -155,7 +156,7 @@ section:target h1 {
   font-family: 'Times New Roman', Times, serif;
 }
 
-/* Projects stuff */
+/* !!!!!!!Projects stuff!!!!!!!! */
 .Projects-Container {
   display: flex;
   flex-direction: column;
@@ -172,9 +173,6 @@ section:target h1 {
   flex-direction: column;
 }
 
-.Main-Project>div {
-  text-align: center;
-}
 
 .Sickie {
   max-width: 28rem;
@@ -194,7 +192,7 @@ section:target h1 {
   flex-direction: column;
   align-items: center;
   max-width: 60%;
-  font-size: 1.25rem;
+  /* font-size: 1.00rem; */
 }
 
 .Sickie-gif {
@@ -208,13 +206,13 @@ section:target h1 {
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   flex-wrap: wrap;
-  margin-left: 10%;
+  margin-left: 20%;
 }
 
 .Side-Projects .card {
   max-width: 15rem;
-  margin: 1rem;
   height: auto;
+  padding-left: 0.5rem;
 }
 
 .Marvel {
@@ -237,6 +235,98 @@ section:target h1 {
   font-weight: bold;
 }
 
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color: var(--complimentary-color);
+}
+
+/* !!!!!!!Projects stuff End !!!!!!!! */
+
+/* !!!!!!!MORE Projects stuff !!!!!!!! */
+/* Style for the "See More Projects" button */
+#see-more-button {
+  position: fixed;
+  top: 5%;
+  right: 20px;
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+/* Add styling for the button container */
+.see-more-button-container {
+  text-align: center; 
+  padding-top: 20px; 
+}
+
+/* Media query for smaller screens (e.g., mobile devices) */
+@media screen and (max-width: 768px) {
+  .see-more-button-container {
+    text-align: center; /* Center the button horizontally */
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+  }
+}
+/* !!!!!!!MORE Projects stuff End !!!!!!!! */
+
+/* !!!!!!!Contact Section !!!!!*/
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-text {
+  padding-bottom: 20%;
+}
+
+/* CSS to style contact buttons */
+.contact-button {
+  display: block;
+  background-color: #007bff; 
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 5px auto; 
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+  text-align: left;
+}
+
+.contact-button:hover {
+  background-color: #0056b3; /* Change this to your preferred button hover color */
+}
+
+/* Center-align buttons */
+.contact-details {
+  text-align: center;
+}
+
+/* !!!!!!!Contact Section End !!!!!*/
+
+
+
 /* Projects */
 /* For screens narrower than a specific width, stack side projects in a single column */
 @media screen and (max-width: 768px) {
@@ -246,7 +336,7 @@ section:target h1 {
 }
 
 
-
+/* Nav Bar */
 
 /* Media query for Nav bar smaller screens */
 @media screen and (max-width: 650px) {
@@ -257,19 +347,43 @@ section:target h1 {
   }
 }
 
+/* !!!!!!!!Projects Section!!!!!!! */
 
-/* Add a media query for screens narrower than a specific width */
 @media screen and (max-width: 768px) {
   /* Hide the GIFs by setting their display property to none */
   .Sickie,
   .Marvel,
   .Summon,
   .Blog {
-  display: none;
+    display: none;
+  }
+
+  .Main-Project {
+    font-size: 0.8rem;
+  }
+
+  .Side-Projects {
+    font-size: 0.7rem;
+  }
+
+  /* Add this rule to hide the header on smaller screens */
+  .Projects-header h1 {
+    display: none;
   }
 }
 
-@media screen and (max-width: 768px) {
+
+/* For screens between 769px and 1024px (medium-sized phones/tablets) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  /* Your styles for medium-sized phones/tablets here */
+  /* Hide the GIFs by setting their display property to none */
+  .Sickie,
+  .Marvel,
+  .Summon,
+  .Blog {
+    display: none;
+  }
+
   .Main-Project {
     font-size: 0.7rem;
     align-items: left;
@@ -285,19 +399,34 @@ section:target h1 {
   }
 }
 
-
-
-
-
-/* Media query for smaller screens */
-@media screen and (max-width: 650px) {
-  .university p {
-    font-size: 1rem; /* Adjust font size for smaller screens */
-  }
-
-  .Sickie-container {
-    font-size: 1rem; /* Adjust font size for smaller screens */
+/* Adjust the font size for smaller screens if needed */
+@media screen and (max-width: 768px) {
+  .button {
+    font-size: 0.5rem;
   }
 }
 
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* !!!!!!Projects Section End!!!!!!! */
+
+/* !!!!!!Education Section!!!!!!  */
+
+/* Media query for smaller screens */
+@media screen and (max-width: 650px) {
+  .university img {
+    display: none;
+  }
+
+  .university p {
+    font-size: 1rem; 
+    text-wrap: wrap;
+    padding-left: 20%;
+  }
+
+}
+/* !!!!!Education Section End!!!!!! */
 
