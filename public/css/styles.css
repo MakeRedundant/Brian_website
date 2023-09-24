@@ -12,10 +12,10 @@
   --light-color: #059682;
 }
 
-/* html,
+html,
 body {
   overflow: hidden;
-} */
+}
 
 
 .container {
@@ -83,13 +83,6 @@ section {
   justify-content: center;
   align-items: center;
 }
-
-/* section h1 {
-    color: #fff;
-    font-size: 50px;
-    text-transform: uppercase;
-    opacity: 0;
-} */
 
 /* Styles applied on trigger */
 section:target {
@@ -244,6 +237,15 @@ section:target h1 {
   font-weight: bold;
 }
 
+/* Projects */
+/* For screens narrower than a specific width, stack side projects in a single column */
+@media screen and (max-width: 768px) {
+  .Side-Projects {
+    grid-template-columns: 1fr; /* Set to a single column for smaller screens */
+  }
+}
+
+
 
 
 /* Media query for Nav bar smaller screens */
@@ -263,10 +265,25 @@ section:target h1 {
   .Marvel,
   .Summon,
   .Blog {
-    display: none;
+  display: none;
   }
 }
 
+@media screen and (max-width: 768px) {
+  .Main-Project {
+    font-size: 0.7rem;
+    align-items: left;
+  }
+
+  .Side-Projects {
+    font-size: 0.6rem;
+  }
+
+  /* Add this rule to hide the header on smaller screens */
+  .Projects-header h1 {
+    display: none;
+  }
+}
 
 
 
