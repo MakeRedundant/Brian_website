@@ -10,7 +10,7 @@
   --complimentary-color: #0e1797;
   --contrast-color: #023d26;
   --light-color: #003c80;
-  --sunset-color:#4b0f00;
+  --sunset-color: #4b0f00;
 }
 
 html,
@@ -274,36 +274,41 @@ section:target h1 {
 
 /* Add styling for the button container */
 .see-more-button-container {
-  text-align: center; 
-  padding-top: 20px; 
+  text-align: center;
+  padding-top: 20px;
 }
 
 /* Media query for smaller screens (e.g., mobile devices) */
 @media screen and (max-width: 768px) {
   #see-more-button {
-    text-align: center; /* Center the button horizontally */
+    text-align: center;
+    /* Center the button horizontally */
     position: fixed;
     right: 20px;
     bottom: 20px;
-    top: auto; 
+    top: auto;
   }
 }
 
 /* Add CSS for the table in the seventh section */
 #seventh table {
-  border-collapse: collapse;
   width: 100%;
   margin-top: 20px;
+  padding-left: 15%;
 }
 
-#seventh th, #seventh td {
-  border: 1px solid #ffffff; /* Add white borders */
-  padding: 8px; /* Add padding to cells */
+#seventh th,
+#seventh td {
+  border: 1px solid #ffffff;
+  /* Add white borders */
+  padding: 8px;
+  /* Add padding to cells */
   text-align: left;
 }
 
 #seventh th {
-  background-color: var(--primary-color); /* Set a background color for header cells */
+  background-color: var(--primary-color);
+  /* Set a background color for header cells */
   color: #fff;
 }
 
@@ -319,17 +324,19 @@ section:target h1 {
 @media screen and (max-width: 768px) {
   .more-projects-container {
     /* Adjust the font size for smaller screens */
-    font-size: 0.5rem; /* You can change this value as needed */
-  }  
-  table {
-    width: 100%; /* Make the table take up the full width */
+    font-size: 0.5rem;
   }
 
-  th, td {
-    display: inline-block; /* Display table header and data cells as inline-block elements */
-    width: 48%; /* Set the width for each column (adjust as needed) */
-    margin-right: 2%; /* Add a small gap between columns */
+  /* Adjust the button size on smaller screens */
+  #seventh .button {
+    font-size: 0.7rem;
+    padding: 5px 10px;
   }
+
+  #seventh h1 {
+    display: none;
+  }
+
 }
 
 
@@ -350,18 +357,19 @@ section:target h1 {
 /* CSS to style contact buttons */
 .contact-button {
   display: block;
-  background-color: #007bff; 
+  background-color: #007bff;
   color: #fff;
   text-decoration: none;
   padding: 10px 20px;
-  margin: 5px auto; 
+  margin: 5px auto;
   border-radius: 25px;
   transition: background-color 0.3s ease;
   text-align: left;
 }
 
 .contact-button:hover {
-  background-color: #0056b3; /* Change this to your preferred button hover color */
+  background-color: #0056b3;
+  /* Change this to your preferred button hover color */
 }
 
 /* Center-align buttons */
@@ -377,7 +385,8 @@ section:target h1 {
 /* For screens narrower than a specific width, stack side projects in a single column */
 @media screen and (max-width: 768px) {
   .Side-Projects {
-    grid-template-columns: 1fr; /* Set to a single column for smaller screens */
+    grid-template-columns: 1fr;
+    /* Set to a single column for smaller screens */
   }
 }
 
@@ -386,16 +395,20 @@ section:target h1 {
 
 /* Media query for Nav bar smaller screens */
 @media screen and (max-width: 650px) {
+
   /* Smaller font size and padding for nav links on smaller screens */
   nav a {
-    font-size: 1rem; /* Adjust font size for smaller screens */
-    padding: 0.5rem; /* Adjust padding for smaller screens */
+    font-size: 1rem;
+    /* Adjust font size for smaller screens */
+    padding: 0.5rem;
+    /* Adjust padding for smaller screens */
   }
 }
 
 /* !!!!!!!!Projects Section!!!!!!! */
 
 @media screen and (max-width: 768px) {
+
   /* Hide the GIFs by setting their display property to none */
   .Sickie,
   .Marvel,
@@ -421,6 +434,7 @@ section:target h1 {
 
 /* For screens between 769px and 1024px (medium-sized phones/tablets) */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
+
   /* Your styles for medium-sized phones/tablets here */
   /* Hide the GIFs by setting their display property to none */
   .Sickie,
@@ -468,11 +482,11 @@ section:target h1 {
   }
 
   .university p {
-    font-size: 1rem; 
+    font-size: 1rem;
     text-wrap: wrap;
     padding-left: 20%;
   }
 
 }
-/* !!!!!Education Section End!!!!!! */
 
+/* !!!!!Education Section End!!!!!! */
