@@ -280,13 +280,59 @@ section:target h1 {
 
 /* Media query for smaller screens (e.g., mobile devices) */
 @media screen and (max-width: 768px) {
-  .see-more-button-container {
+  #see-more-button {
     text-align: center; /* Center the button horizontally */
-    position: absolute;
+    position: fixed;
     right: 20px;
     bottom: 20px;
+    top: auto; 
   }
 }
+
+/* Add CSS for the table in the seventh section */
+#seventh table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+}
+
+#seventh th, #seventh td {
+  border: 1px solid #ffffff; /* Add white borders */
+  padding: 8px; /* Add padding to cells */
+  text-align: left;
+}
+
+#seventh th {
+  background-color: var(--primary-color); /* Set a background color for header cells */
+  color: #fff;
+}
+
+.more-projects-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  text-wrap: wrap;
+}
+
+/* Media query for smaller screens (e.g., phones) */
+@media screen and (max-width: 768px) {
+  .more-projects-container {
+    /* Adjust the font size for smaller screens */
+    font-size: 0.5rem; /* You can change this value as needed */
+  }  
+  table {
+    width: 100%; /* Make the table take up the full width */
+  }
+
+  th, td {
+    display: inline-block; /* Display table header and data cells as inline-block elements */
+    width: 48%; /* Set the width for each column (adjust as needed) */
+    margin-right: 2%; /* Add a small gap between columns */
+  }
+}
+
+
 /* !!!!!!!MORE Projects stuff End !!!!!!!! */
 
 /* !!!!!!!Contact Section !!!!!*/
