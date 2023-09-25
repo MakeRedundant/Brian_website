@@ -46,15 +46,6 @@ nav {
   background: var(--secondary-color);
 }
 
-.zero-section {
-  position: absolute;
-  opacity: 1;
-  padding-left: 10%;
-  padding-top: 10%;
-  font-size: 1.5rem;
-  color: azure;
-  transition: opacity 0.5s ease-in-out;
-}
 
 .Projects-header h1 {
   left: 25%;
@@ -129,6 +120,19 @@ section:target h1 {
     opacity: 1
   }
 }
+/* !!!!!!!!!!! Zero Section !!!!!!! */
+.zero-section {
+  position: absolute;
+  opacity: 1;
+  padding-left: 10%;
+  padding-top: 10%;
+  font-size: 1.5rem;
+  color: azure;
+  transition: opacity 0.5s ease-in-out;
+}
+
+
+/* !!!!!!!!!!! Zero Section End !!!!!!! */
 
 /* !!!!!! First Section !!!!! */
 .first-section {
@@ -138,7 +142,6 @@ section:target h1 {
 
 .shaking-eyes-gif {
   width: 20%; /* Adjust the width as needed */
-  margin: 0 auto; /* Center the image horizontally */
   margin-bottom: 20px; /* Add some margin at the bottom */
   text-align: center; /* Center the image horizontally within its container */
 }
