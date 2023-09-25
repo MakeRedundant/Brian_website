@@ -130,6 +130,20 @@ section:target h1 {
   }
 }
 
+/* !!!!!! First Section !!!!! */
+.first-section {
+  font-size: 1.5rem;
+  display: block;
+}
+
+.shaking-eyes-gif {
+  width: 20%; /* Adjust the width as needed */
+  margin: 0 auto; /* Center the image horizontally */
+  margin-bottom: 20px; /* Add some margin at the bottom */
+  text-align: center; /* Center the image horizontally within its container */
+}
+
+
 /* Education section */
 .university {
   display: flex;
@@ -175,7 +189,7 @@ section:target h1 {
 
 
 .Sickie {
-  max-width: 28rem;
+  max-width: 26rem;
   height: auto;
   margin-right: 1.5%;
   margin-left: 1.5%;
@@ -200,7 +214,7 @@ section:target h1 {
 }
 
 .Side-Projects {
-  padding-top: 5%;
+  padding-top: 3%;
   max-width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
