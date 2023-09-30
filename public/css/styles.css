@@ -153,7 +153,7 @@ section:target h1 {
 .text-box {
   border: 2px solid #000; /* Border style */
   padding: 2%; /* Padding inside the box */
-  background-color: #000000;
+   background-color: rgba(0, 0, 0, 0.7); /* Background color with 70% opacity */
   border-radius: 15px;
 }
 
