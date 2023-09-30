@@ -20,7 +20,8 @@ body {
 
 
 .container {
-  background: #000000;
+  /* background: #000000; */
+  background: url('/assets/astronaut-man.jpg') no-repeat center center/cover;
   min-height: 100vh;
   font-family: Montserrat, sans-serif;
   padding: 2%;
@@ -99,20 +100,36 @@ section:target h1 {
   background: var(--complimentary-color);
 }
 
-#third {
+/* #third {
   background: var(--contrast-color);
+} */
+
+#third {
+  background: url('/assets/lonely-blue.jpg') no-repeat center center/cover;
+  /* This will set the background image, center it both horizontally and vertically, and make sure it covers the entire element */
 }
 
-#fourth {
+/* #fourth {
   background: var(--light-color);
+} */
+
+#fourth {
+  background: url('/assets/Journey.jpg') no-repeat center center/cover;
+  /* This will set the background image, center it both horizontally and vertically, and make sure it covers the entire element */
 }
+
 
 #fifth {
   background: var(--secondary-color);
 }
 
-#sixth {
+/* #sixth {
   background: var(--sunset-color);
+} */
+
+#sixth {
+  background: url('/assets/astronaut-man.jpg') no-repeat center center/cover;
+  /* This will set the background image, center it both horizontally and vertically, and make sure it covers the entire element */
 }
 
 @keyframes fadeIn {
@@ -130,6 +147,13 @@ section:target h1 {
   font-size: 1.5rem;
   color: azure;
   transition: opacity 0.5s ease-in-out;
+}
+
+.text-box {
+  border: 2px solid #000; /* Border style */
+  padding: 10%; /* Padding inside the box */
+  background-color: #000000;
+  border-radius: 15px;
 }
 
 
