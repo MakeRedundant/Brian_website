@@ -120,6 +120,7 @@ section:target h1 {
     opacity: 1
   }
 }
+
 /* !!!!!!!!!!! Zero Section !!!!!!! */
 .zero-section {
   position: absolute;
@@ -141,9 +142,29 @@ section:target h1 {
 }
 
 .shaking-eyes-gif {
-  width: 20%; /* Adjust the width as needed */
-  margin-bottom: 20px; /* Add some margin at the bottom */
-  text-align: center; /* Center the image horizontally within its container */
+  width: 20%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* !!!!!!!!!!!!! Skills !!!!!!!!!! */
+
+.skills-table {
+  padding-left: 20%;
+  padding-right: 10%;
+  padding-top: 5%;
+  margin-top: 2.5%;
+}
+
+.skills-table th,
+.skills-table td {
+  border: 0.15em solid #ddd;
+  padding: 1.25%;
+  text-align: left;
+}
+
+.skills-table th {
+  background-color: #000000;
 }
 
 
@@ -361,7 +382,8 @@ section:target h1 {
 
 /* !!!!!!!Contact Section !!!!!*/
 #sixth h1 {
-  padding-bottom: 10%; /* You can adjust the value (20px in this example) according to your preference */
+  padding-bottom: 10%;
+  /* You can adjust the value (20px in this example) according to your preference */
 }
 
 .contact-container {
