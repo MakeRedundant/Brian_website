@@ -8,7 +8,7 @@
   --primary-color: #161461;
   --secondary-color: #4415a8;
   --complimentary-color: #0e1797;
-  /* --contrast-color: #023d26; */
+  --contrast-color: #023d26;
   --light-color: #003c80;
   --sunset-color: #4b0f00;
 }
@@ -20,8 +20,8 @@ body {
 
 
 .container {
-  /* background: #000000; */
-  background: url('/assets/astronaut-man.jpg') no-repeat center center/cover;
+  background: #000000;
+  /* background: url('../assets/astronaut-man.jpg') no-repeat center center/cover; */
   min-height: 100vh;
   font-family: Montserrat, sans-serif;
   padding: 2%;
@@ -104,33 +104,34 @@ section:target h1 {
   background: var(--contrast-color);
 } */
 
-#third {
-  background: url('/assets/lonely-blue.jpg') no-repeat center center/cover;
-  /* This will set the background image, center it both horizontally and vertically, and make sure it covers the entire element */
-}
-
-/* #fourth {
-  background: var(--light-color);
+/* #third {
+  background: url('../assets/lonely-blue.jpg') no-repeat center center/cover;
+  /* This will set the background image, center it both horizontally and vertically, and make sure it covers the entire element 
+  
 } */
 
 #fourth {
-  background: url('/assets/Journey.jpg') no-repeat center center/cover;
-  /* This will set the background image, center it both horizontally and vertically, and make sure it covers the entire element */
+  background: var(--light-color);
 }
+
+/* #fourth {
+  background: url('../assets/Journey.jpg') no-repeat center center/cover;
+  /* This will set the background image, center it both horizontally and vertically, and make sure it covers the entire element 
+} */
 
 
 #fifth {
   background: var(--secondary-color);
 }
 
-/* #sixth {
-  background: var(--sunset-color);
-} */
-
 #sixth {
-  background: url('/assets/astronaut-man.jpg') no-repeat center center/cover;
-  /* This will set the background image, center it both horizontally and vertically, and make sure it covers the entire element */
+  background: var(--sunset-color);
 }
+
+/* #sixth {
+  background: url('../assets/astronaut-man.jpg') no-repeat center center/cover;
+  /* This will set the background image, center it both horizontally and vertically, and make sure it covers the entire element
+} */
 
 @keyframes fadeIn {
   100% {
