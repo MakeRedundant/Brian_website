@@ -340,6 +340,44 @@ section:target h1 {
   padding-top: 20px;
 }
 
+/* CSS for the dark background table */
+/* .more-tables {
+  background-color: #333; 
+  color: #fff; 
+} */
+
+/* Apply the dark background table style to the table in your HTML */
+#seventh .more-tables th,
+#seventh .more-tables td {
+  border: 1px solid #fff; /* White border for table cells */
+  padding: 10px; /* Padding inside the table cells */
+  background-color: #000000; /* Dark background color for table cells */
+}
+
+/* Add CSS for the table in the seventh section */
+#seventh table {
+  width: 100%;
+  margin-top: 20px;
+  padding-left: 15%; /* Add left padding */
+}
+
+#seventh table th,
+#seventh table td {
+  border: 1px solid #ffffff;
+  /* Add white borders */
+  padding: 8px;
+  /* Add padding to cells */
+  text-align: left;
+}
+
+#seventh table th {
+  background-color: var(--primary-color);
+  /* Set a background color for header cells */
+  color: #fff;
+}
+
+
+
 /* Media query for smaller screens (e.g., mobile devices) */
 @media screen and (max-width: 768px) {
   #see-more-button {
@@ -352,27 +390,7 @@ section:target h1 {
   }
 }
 
-/* Add CSS for the table in the seventh section */
-#seventh table {
-  width: 100%;
-  margin-top: 20px;
-  padding-left: 15%;
-}
 
-#seventh th,
-#seventh td {
-  border: 1px solid #ffffff;
-  /* Add white borders */
-  padding: 8px;
-  /* Add padding to cells */
-  text-align: left;
-}
-
-#seventh th {
-  background-color: var(--primary-color);
-  /* Set a background color for header cells */
-  color: #fff;
-}
 
 .more-projects-container {
   display: flex;
