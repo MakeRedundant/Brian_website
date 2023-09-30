@@ -152,7 +152,7 @@ section:target h1 {
 
 .text-box {
   border: 2px solid #000; /* Border style */
-  padding: 10%; /* Padding inside the box */
+  padding: 5%; /* Padding inside the box */
   background-color: #000000;
   border-radius: 15px;
 }
@@ -340,12 +340,6 @@ section:target h1 {
   padding-top: 20px;
 }
 
-/* CSS for the dark background table */
-/* .more-tables {
-  background-color: #333; 
-  color: #fff; 
-} */
-
 /* Apply the dark background table style to the table in your HTML */
 #seventh .more-tables th,
 #seventh .more-tables td {
@@ -437,7 +431,7 @@ section:target h1 {
 }
 
 .contact-text {
-  padding-bottom: 30%;
+  padding-bottom: 5%;
 }
 
 /* CSS to style contact buttons */
