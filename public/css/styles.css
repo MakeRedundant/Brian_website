@@ -62,6 +62,20 @@ section h1 {
   top: 10%;
   left: 50%;
   transform: translateX(-50%);
+    border: 2px solid #000;
+  padding: 2%;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 15px;
+}
+
+.text-box {
+  border: 2px solid #000;
+  /* Border style */
+  padding: 2%;
+  /* Padding inside the box */
+  background-color: rgba(0, 0, 0, 0.7);
+  /* Background color with 70% opacity */
+  border-radius: 15px;
 }
 
 section {
@@ -106,7 +120,7 @@ section:target h1 {
 
 #third {
   background: url('../assets/lonely-blue.jpg') no-repeat center center/cover;
-  
+
 }
 
 #fourth {
@@ -148,14 +162,6 @@ section:target h1 {
   color: azure;
   transition: opacity 0.5s ease-in-out;
 }
-
-.text-box {
-  border: 2px solid #000; /* Border style */
-  padding: 2%; /* Padding inside the box */
-   background-color: rgba(0, 0, 0, 0.7); /* Background color with 70% opacity */
-  border-radius: 15px;
-}
-
 
 /* !!!!!!!!!!! Zero Section End !!!!!!! */
 
@@ -347,8 +353,10 @@ section:target h1 {
 
 #seventh .more-tables th,
 #seventh .more-tables td {
-  border: 1px solid #fff; /* White border for table cells */
-  padding: 10px; /* Padding inside the table cells */
+  border: 1px solid #fff;
+  /* White border for table cells */
+  padding: 10px;
+  /* Padding inside the table cells */
   background-color: rgba(0, 0, 0, 0.7);
 }
 
@@ -356,7 +364,8 @@ section:target h1 {
 #seventh table {
   width: 100%;
   margin-top: 20px;
-  padding-left: 15%; /* Add left padding */
+  padding-left: 15%;
+  /* Add left padding */
 }
 
 #seventh table th,
@@ -422,7 +431,7 @@ section:target h1 {
 
 /* !!!!!!!Contact Section !!!!!*/
 #sixth h1 {
-  padding-bottom: 10%;
+  /* padding-bottom: 10%; */
   /* You can adjust the value (20px in this example) according to your preference */
 }
 
@@ -470,15 +479,17 @@ section:target h1 {
 /* Media query for smaller screens (e.g., mobile devices) */
 @media screen and (max-width: 768px) {
   .zero-section .text-box {
-    padding: 20px; /* Adjust the padding as needed for mobile devices */
+    padding: 20px;
+    /* Adjust the padding as needed for mobile devices */
   }
 
   .zero-section h2 {
-    font-size: 2rem; /* Adjust the font size for the heading on smaller screens */
+    font-size: 2rem;
+    /* Adjust the font size for the heading on smaller screens */
   }
 
   .zero-section p {
-    font-size: 1.5rem; 
+    font-size: 1.5rem;
   }
 }
 
@@ -518,13 +529,15 @@ section:target h1 {
 /* Media query for smaller screens (e.g., phones) */
 @media screen and (max-width: 768px) {
   .about-text {
-    font-size: 1rem; /* Adjust font size for smaller screens */
+    font-size: 1rem;
+    /* Adjust font size for smaller screens */
   }
 }
 
 @media screen and (max-width: 768px) {
   .shaking-eyes-gif img {
-    max-width: 50%; /* Adjust the maximum width for smaller screens */
+    max-width: 50%;
+    /* Adjust the maximum width for smaller screens */
   }
 }
 
@@ -534,9 +547,10 @@ section:target h1 {
 /* !!!!!!!!Skills Section!!!!!!! */
 
 @media screen and (max-width: 768px) {
+
   .skills-table th,
   .skills-table td {
-    font-size: 0.8rem; 
+    font-size: 0.8rem;
   }
 }
 
@@ -635,10 +649,10 @@ section:target h1 {
 /* Media query for smaller screens (e.g., phones) */
 @media screen and (max-width: 768px) {
   .contact-gifs img {
-    max-width: 50%; /* Adjust the maximum width for smaller screens */
+    max-width: 50%;
+    /* Adjust the maximum width for smaller screens */
   }
 }
 
 
 /* !!!!!Contact Section End !!!!!! */
-
