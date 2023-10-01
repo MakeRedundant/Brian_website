@@ -6,10 +6,11 @@
 
 :root {
   --primary-color: #161461;
-  --secondary-color: #4415a8;
+  --nav-color: #14003f;
   --complimentary-color: #0e1797;
   --contrast-color: #023d26;
-  --light-color: #059682;
+  --light-color: #003c80;
+  --sunset-color: #4b0f00;
 }
 
 html,
@@ -20,17 +21,20 @@ body {
 
 .container {
   background: #000000;
+  /* background: url('../assets/astronaut-man.jpg') no-repeat center center/cover; */
   min-height: 100vh;
   font-family: Montserrat, sans-serif;
+  padding: 2%;
 }
 
 nav a {
-  font-size: 40px;
+  font-size: 2.5rem;
   color: #fff;
   text-decoration: none;
-  padding: 20px;
+  padding: 1.5rem;
   text-align: center;
 }
+
 
 nav {
   position: absolute;
@@ -40,18 +44,9 @@ nav {
   justify-content: space-around;
   flex-direction: column;
   height: 100vh;
-  background: var(--secondary-color);
+  background: var(--nav-color);
 }
 
-.zero-section {
-  position: absolute;
-  opacity: 1;
-  margin-left: 20%;
-  padding-top: 20%;
-  font-size: 20px;
-  color: azure;
-  transition: opacity 0.5s ease-in-out;
-}
 
 .Projects-header h1 {
   left: 25%;
@@ -60,13 +55,27 @@ nav {
 
 section h1 {
   color: #fff;
-  font-size: 50px;
+  font-size: 2.5rem;
   text-transform: uppercase;
   opacity: 0;
   position: absolute;
   top: 10%;
   left: 50%;
   transform: translateX(-50%);
+  border: 2px solid #000;
+  padding: 2%;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 15px;
+}
+
+.text-box {
+  border: 2px solid #000;
+  /* Border style */
+  padding: 2%;
+  /* Padding inside the box */
+  background-color: rgba(0, 0, 0, 0.7);
+  /* Background color with 70% opacity */
+  border-radius: 15px;
 }
 
 section {
@@ -81,13 +90,6 @@ section {
   justify-content: center;
   align-items: center;
 }
-
-/* section h1 {
-    color: #fff;
-    font-size: 50px;
-    text-transform: uppercase;
-    opacity: 0;
-} */
 
 /* Styles applied on trigger */
 section:target {
@@ -112,21 +114,37 @@ section:target h1 {
   background: var(--complimentary-color);
 }
 
-#third {
+/* #third {
   background: var(--contrast-color);
+} */
+
+#third {
+  background: url('../assets/lonely-blue.jpg') no-repeat center center/cover;
+
 }
 
 #fourth {
   background: var(--light-color);
 }
 
+/* #fourth {
+  background: url('../assets/Journey.jpg') no-repeat center center/cover;
+  /* This will set the background image, center it both horizontally and vertically, and make sure it covers the entire element 
+} */
+
+
 #fifth {
-  background: var(--light-color);
+  background: var(--nav-color);
 }
 
 #sixth {
-  background: var(--light-color);
+  background: var(--sunset-color);
 }
+
+/* #sixth {
+  background: url('../assets/astronaut-man.jpg') no-repeat center center/cover;
+  /* This will set the background image, center it both horizontally and vertically, and make sure it covers the entire element
+} */
 
 @keyframes fadeIn {
   100% {
@@ -134,39 +152,91 @@ section:target h1 {
   }
 }
 
+/* !!!!!!!!!!! Zero Section !!!!!!! */
+.zero-section {
+  position: absolute;
+  opacity: 1;
+  padding-left: 15%;
+  padding-top: 15%;
+  font-size: 1.5rem;
+  color: azure;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* !!!!!!!!!!! Zero Section End !!!!!!! */
+
+/* !!!!!! First Section !!!!! */
+.first-section {
+  font-size: 1.5rem;
+  display: block;
+}
+
+.shaking-eyes-gif {
+  /* width: 20%;
+  margin-bottom: 10%; */
+  text-align: center;
+  padding-left: 10%;
+}
+
+.about-text {
+  padding-left: 15%;
+}
+
+/* !!!!!!!!!!!!! Experience !!!!!!!!!! */
+.work-cat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.work-cat img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+/* !!!!!!!!!!!!! Experience end !!!!!!!!!! */
+
+/* !!!!!!!!!!!!! Skills !!!!!!!!!! */
+
+.skills-table {
+  font-size: 0.9rem;
+  padding-left: 20%;
+  padding-right: 10%;
+  padding-top: 15%;
+}
+
+.skills-table th,
+.skills-table td {
+  border: 0.15em solid #ddd;
+  padding: 1.25%;
+  text-align: left;
+}
+
+.skills-table th {
+  background-color: #000000;
+}
+
+
 /* Education section */
 .university {
   display: flex;
-  margin-bottom: 20px;
-  /* Add some spacing between universities */
+  margin-bottom: 1rem;
   align-items: center;
-  /* Vertically center content */
   justify-content: space-between;
-  /* Spread items horizontally */
   flex-direction: row-reverse;
-  /* Reverse the order of flex items */
-  /* padding-left: 20%; */
-
 }
 
 .university img {
-  width: 150px;
-  /* Set the width of the image (adjust as needed) */
-  margin-left: 20px;
-  /* Add some spacing between the image and text */
+  width: 9rem;
+  margin-left: 1rem;
 }
 
-/* Additional styling for the university names (adjust as needed) */
 .university p {
-  font-size: 20px;
-  /* Adjust the font size as needed */
+  font-size: 1.25rem;
   color: #ffffff;
-  /* Adjust the text color as needed */
   flex: 1;
-  /* Allow text to expand and fill available space */
   text-align: left;
-  /* Align text to the left to ensure consistent alignment */
-  font-size: 20px;
 }
 
 .university p span {
@@ -174,106 +244,77 @@ section:target h1 {
   font-family: 'Times New Roman', Times, serif;
 }
 
-
-/*Projects stuff */
-
+/* !!!!!!!Projects stuff!!!!!!!! */
 .Projects-Container {
   display: flex;
   flex-direction: column;
-  /* Create a column layout */
   align-items: center;
-  /* Center-align the content horizontally */
 }
 
 .Main-Project {
-  padding-top: 5%;
-  /* Adjust this value as needed to move it up */
+  padding-top: 2%;
   display: flex;
-  /* Use flexbox for the GIF container */
   justify-content: center;
-  /* Align items horizontally with some space */
   align-items: center;
-  /* Vertically center the items */
   flex-wrap: wrap;
   clear: both;
   flex-direction: column;
-  /* Stack elements vertically */
 }
 
-.Main-Project>div {
-  text-align: center;
-}
 
 .Sickie {
-  max-width: 450px;
-  /* Set the maximum width to fit its container */
+  max-width: 26rem;
   height: auto;
-  /* Automatically adjust the height to maintain aspect ratio */
-  margin-right: 5%;
-  margin-left: 5%;
+  margin-right: 1.5%;
+  margin-left: 1.5%;
   transition: transform 0.3s;
-  /* Add a transition for smooth scaling */
 }
 
-/* Add the hover effect */
 .Sickie:hover {
   transform: scale(1.3);
-  /* Scale the image to 110% on hover */
 }
 
 .Sickie-container {
   margin-left: 5%;
   display: flex;
   flex-direction: column;
-  /* Stack text on top of the image for small screens */
   align-items: center;
   max-width: 60%;
-  /* Set a max-width for text container */
-  font-size: 20px;
-
+  /* font-size: 1.00rem; */
 }
 
 .Sickie-gif {
   align-items: center;
-  /* Vertically center the GIF */
 }
 
 .Side-Projects {
-  padding-top: 10%;
+  padding-top: 3%;
   max-width: 100%;
-  /* Optionally, set a maximum width */
   display: grid;
-  /* Use CSS Grid */
   grid-template-columns: repeat(3, 1fr);
-  /* Create three equal-width columns */
-  gap: 20px;
-  /* Add some spacing between columns and rows */
+  gap: 2rem;
   flex-wrap: wrap;
-  margin-left: 120px;
+  margin-left: 20%;
 }
 
-/* Additional styling for your .card elements, if needed */
 .Side-Projects .card {
-  /* Your card styles here */
-  /* For example, you can set max-width and add margin for spacing */
-  max-width: 300px;
-  margin: 10px;
-  height: 400px;
-  /* Set a fixed height for the cards */
+  max-width: 15rem;
+  height: auto;
+  padding-left: 0.5rem;
 }
 
 .Marvel {
-  width: 250px;
+  width: 15rem;
   height: auto;
 }
 
 .Summon {
-  width: 250px;
+  width: 15rem;
   height: auto;
 }
 
 .Blog {
-  width: 250px;
+  width: 15rem;
   height: auto;
 }
 
@@ -281,3 +322,354 @@ section:target h1 {
   font-family: 'Times New Roman', Times, serif;
   font-weight: bold;
 }
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color: var(--complimentary-color);
+}
+
+/* !!!!!!!Projects stuff End !!!!!!!! */
+
+/* !!!!!!!MORE Projects stuff !!!!!!!! */
+/* Style for the "See More Projects" button */
+#see-more-button {
+  position: fixed;
+  top: 5%;
+  right: 20px;
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+/* Add styling for the button container */
+.see-more-button-container {
+  text-align: center;
+  padding-top: 20px;
+}
+
+#seventh .more-tables th,
+#seventh .more-tables td {
+  border: 1px solid #fff;
+  /* White border for table cells */
+  padding: 10px;
+  /* Padding inside the table cells */
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Add CSS for the table in the seventh section */
+#seventh table {
+  width: 100%;
+  margin-top: 20px;
+  padding-left: 15%;
+  /* Add left padding */
+}
+
+#seventh table th,
+#seventh table td {
+  border: 1px solid #ffffff;
+  /* Add white borders */
+  padding: 8px;
+  /* Add padding to cells */
+  text-align: left;
+}
+
+#seventh table th {
+  background-color: var(--primary-color);
+  /* Set a background color for header cells */
+  color: #fff;
+}
+
+/* Media query for smaller screens (e.g., mobile devices) */
+@media screen and (max-width: 768px) {
+  #see-more-button {
+    text-align: center;
+    /* Center the button horizontally */
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    top: auto;
+  }
+}
+
+.more-projects-container {
+  display: flex;
+  padding-top: 10%;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  text-wrap: wrap;
+}
+
+/* Media query for smaller screens (e.g., phones) */
+@media screen and (max-width: 768px) {
+  .more-projects-container {
+    /* Adjust the font size for smaller screens */
+    font-size: 0.5rem;
+  }
+
+  /* Adjust the button size on smaller screens */
+  #seventh .button {
+    font-size: 0.7rem;
+    padding: 5px 10px;
+  }
+
+  #seventh h1 {
+    display: none;
+  }
+
+}
+
+
+/* !!!!!!!MORE Projects stuff End !!!!!!!! */
+
+/* !!!!!!!Contact Section !!!!!*/
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 10%;
+}
+
+.contact-text {
+  padding-bottom: 5%;
+}
+
+/* CSS to style contact buttons */
+.contact-button {
+  display: block;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 5px auto;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+  text-align: left;
+}
+
+.contact-button:hover {
+  background-color: #0056b3;
+  /* Change this to your preferred button hover color */
+}
+
+/* Center-align buttons */
+.contact-details {
+  text-align: center;
+}
+
+/* !!!!!!!Contact Section End !!!!!*/
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Media Query !!!!!!!!!!!!!!!!!!!!!! */
+
+/* !!!!! zero section !!!!!!! */
+
+/* Media query for smaller screens (e.g., mobile devices) */
+@media screen and (max-width: 768px) {
+  .zero-section .text-box {
+    padding: 20px;
+    /* Adjust the padding as needed for mobile devices */
+  }
+
+  .zero-section h2 {
+    font-size: 2rem;
+    /* Adjust the font size for the heading on smaller screens */
+  }
+
+  .zero-section p {
+    font-size: 1.5rem;
+  }
+}
+
+
+
+
+
+
+
+
+/* Projects */
+@media screen and (max-width: 768px) {
+  .Side-Projects {
+    grid-template-columns: 1fr;
+    /* Set to a single column for smaller screens */
+  }
+}
+
+
+
+/* Nav Bar */
+
+/* Media query for Nav bar smaller screens */
+@media screen and (max-width: 650px) {
+
+  /* Smaller font size and padding for nav links on smaller screens */
+  nav a {
+    font-size: 1rem;
+    /* Adjust font size for smaller screens */
+    padding: 0.5rem;
+    /* Adjust padding for smaller screens */
+  }
+}
+
+/* !!!!!!!!Abouts Section!!!!!!! */
+
+/* Media query for smaller screens (e.g., phones) */
+@media screen and (max-width: 768px) {
+  .about-text {
+    font-size: 1rem;
+    /* Adjust font size for smaller screens */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .shaking-eyes-gif img {
+    max-width: 50%;
+    /* Adjust the maximum width for smaller screens */
+  }
+}
+
+
+/* !!!!!!!!Abouts Section End!!!!!!! */
+
+/* !!!!!!!!Experience Section End!!!!!!! */
+
+/* Media query for smaller devices */
+@media screen and (max-width: 768px) {
+  .work-cat img {
+    max-width: 50%; /* Reduce the maximum width for smaller devices */
+  }
+}
+
+/* !!!!!!!!Experience Section End!!!!!!! */
+
+/* !!!!!!!!Skills Section!!!!!!! */
+
+@media screen and (max-width: 768px) {
+
+  .skills-table th,
+  .skills-table td {
+    font-size: 0.8rem;
+  }
+}
+
+/* !!!!!!!!Skills Section End!!!!!!! */
+
+/* !!!!!!!!Projects Section!!!!!!! */
+
+@media screen and (max-width: 768px) {
+
+  /* Hide the GIFs by setting their display property to none */
+  .Sickie,
+  .Marvel,
+  .Summon,
+  .Blog {
+    display: none;
+  }
+
+  .Main-Project {
+    font-size: 0.6rem;
+  }
+
+  .Side-Projects {
+    font-size: 0.5rem;
+  }
+
+  /* Add this rule to hide the header on smaller screens */
+  .Projects-header h1 {
+    display: none;
+  }
+}
+
+
+/* For screens between 769px and 1024px (medium-sized phones/tablets) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+  /* Your styles for medium-sized phones/tablets here */
+  /* Hide the GIFs by setting their display property to none */
+  .Sickie,
+  .Marvel,
+  .Summon,
+  .Blog {
+    display: none;
+  }
+
+  .Main-Project {
+    font-size: 0.5rem;
+    align-items: left;
+  }
+
+  .Side-Projects {
+    font-size: 0.4rem;
+  }
+
+  /* Add this rule to hide the header on smaller screens */
+  .Projects-header h1 {
+    display: none;
+  }
+}
+
+/* Adjust the font size for smaller screens if needed */
+@media screen and (max-width: 768px) {
+  .button {
+    font-size: 0.5rem;
+  }
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* !!!!!!Projects Section End!!!!!!! */
+
+/* !!!!!!Education Section!!!!!!  */
+
+/* Media query for smaller screens */
+@media screen and (max-width: 650px) {
+  .university img {
+    display: none;
+  }
+
+  .university p {
+    font-size: 1rem;
+    text-wrap: wrap;
+    padding-left: 20%;
+  }
+
+}
+
+/* !!!!!Education Section End!!!!!! */
+
+/* !!!!!Contact Section !!!!!! */
+
+/* Media query for smaller screens (e.g., phones) */
+@media screen and (max-width: 768px) {
+  .contact-gifs img {
+    max-width: 50%;
+    /* Adjust the maximum width for smaller screens */
+  }
+}
+
+
+/* !!!!!Contact Section End !!!!!! */
