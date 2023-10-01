@@ -512,11 +512,11 @@ section:target h1 {
   }
 
   .Main-Project {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
   }
 
   .Side-Projects {
-    font-size: 0.7rem;
+    font-size: 0.5rem;
   }
 
   /* Add this rule to hide the header on smaller screens */
@@ -539,12 +539,12 @@ section:target h1 {
   }
 
   .Main-Project {
-    font-size: 0.6rem;
+    font-size: 0.5rem;
     align-items: left;
   }
 
   .Side-Projects {
-    font-size: 0.6rem;
+    font-size: 0.4rem;
   }
 
   /* Add this rule to hide the header on smaller screens */
