@@ -340,12 +340,11 @@ section:target h1 {
   padding-top: 20px;
 }
 
-/* Apply the dark background table style to the table in your HTML */
 #seventh .more-tables th,
 #seventh .more-tables td {
   border: 1px solid #fff; /* White border for table cells */
   padding: 10px; /* Padding inside the table cells */
-  background-color: #000000; /* Dark background color for table cells */
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 /* Add CSS for the table in the seventh section */
