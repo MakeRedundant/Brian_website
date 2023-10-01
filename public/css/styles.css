@@ -182,6 +182,21 @@ section:target h1 {
   padding-left: 15%;
 }
 
+/* !!!!!!!!!!!!! Experience !!!!!!!!!! */
+.work-cat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.work-cat img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+/* !!!!!!!!!!!!! Experience end !!!!!!!!!! */
+
 /* !!!!!!!!!!!!! Skills !!!!!!!!!! */
 
 .skills-table {
@@ -537,6 +552,17 @@ section:target h1 {
 
 /* !!!!!!!!Abouts Section End!!!!!!! */
 
+/* !!!!!!!!Experience Section End!!!!!!! */
+
+/* Media query for smaller devices */
+@media screen and (max-width: 768px) {
+  .work-cat img {
+    max-width: 50%; /* Reduce the maximum width for smaller devices */
+  }
+}
+
+/* !!!!!!!!Experience Section End!!!!!!! */
+
 /* !!!!!!!!Skills Section!!!!!!! */
 
 @media screen and (max-width: 768px) {
@@ -547,9 +573,7 @@ section:target h1 {
   }
 }
 
-
 /* !!!!!!!!Skills Section End!!!!!!! */
-
 
 /* !!!!!!!!Projects Section!!!!!!! */
 
