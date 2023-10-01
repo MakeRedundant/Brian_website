@@ -169,7 +169,7 @@ section:target h1 {
   width: 20%;
   margin-bottom: 10%;
   text-align: center;
-  padding-left: 20%;
+  padding-left: 30%;
 }
 
 .about-text {
@@ -539,7 +539,7 @@ section:target h1 {
   }
 
   .Main-Project {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     align-items: left;
   }
 
